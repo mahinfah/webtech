@@ -1,115 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head><title>
-    WT_K
-</title></head>
- 
+<head>
+    <meta charset="UTF-8">
+    <title>WT_K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-   
-    <h1>                     Welcome to Admission Form         </h1>
-    <p>Please provide your information </p>
- 
-<h1>Admission Form</h1>
-<form>
 
-    
-<table>
- 
-<tr>
-<td> Full Name:</td>
-<td> <input type="text"> </td>
-</tr>
- 
-<tr>
-<td> Number:</td>
-<td> <input type="number"> </td>
-</tr>
+    <h1>Welcome to Admission Form</h1>
+    <p>Please provide your information</p>
 
-<tr>
-<td> Email:</td>
-<td><input type="email">  </td>
+    <h1>Admission Form</h1>
 
-</tr>
- 
+    <form>
 
+        <table>
 
-<tr>
-<td> Gender: 
-    <input type="radio" name=male" value="male"> Male
- 
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" placeholder="Enter your full name"></td>
+            </tr>
 
+            <tr>
+                <td>Number:</td>
+                <td><input type="number" name="number" placeholder="Enter your number"></td>
+            </tr>
 
-    <input type="radio" name="female" value="female"> Female
-</td>
-</tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" placeholder="Enter your email"></td>
+            </tr>
 
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
 
-<tr>
-<td>
-    Department Interest:
-    
- <input type="checkbox" name="department" value="cse"> CSE
-    
- <input type="checkbox" name="department" value="eee"> EEE
-<input type="checkbox" name="department" value="Data Science"> Data Science
-    
- <input type="checkbox" name="department" value="english"> English
-</td>
-</tr>
+            <tr>
+                <td>Department Interest:</td>
+                <td>
+                    <input type="checkbox" name="department" value="cse"> CSE
+                    <input type="checkbox" name="department" value="eee"> EEE
+                    <input type="checkbox" name="department" value="data-science"> Data Science
+                    <input type="checkbox" name="department" value="english"> English
+                </td>
+            </tr>
 
-<tr>
+            <tr>
+                <td>Course Selection:</td>
+                <td>
+                    <select name="course">
+                        <option value="">-- Select Course --</option>
+                        <option value="cse101">CSE101 - Introduction to Programming</option>
+                        <option value="cse201">CSE201 - English Writing</option>
+                        <option value="cse301">CSE301 - CAD</option>
+                        <option value="cse401">CSE401 - Operating Systems</option>
+                    </select>
+                </td>
+            </tr>
 
-<td>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age" placeholder="Enter your age"></td>
+            </tr>
 
-    Course Selection:
-     
-    <select name="Course">
-       <option value="">-- Select Course --</option>
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
 
-       <option value="cse101">CSE101 - Introduction to Programming</option>
-       <option value="cse201">CSE201 - English Writing</option>
-       <option value="cse301">CSE301 - CAD</option>
-        <option value="cse401">CSE401 - Operating Systems</option>
-     </select>
-</td>
-</tr>
+            <tr>
+                <td>Birth Certificate Upload:</td>
+                <td><input type="file" name="fileUpload"></td>
+            </tr>
 
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
 
+        </table>
 
+    </form>
 
-
-
-
-
- 
-<tr>
-<td> Age: </td>
-
-<td> <input type="number"> </td>
-</tr>
- 
-<tr>
-<td>
-Dob:
-</td>
-<td> <input type="date"></td>
-</tr>
-<tr>
-<td> <input type="submit"> </td>
-</tr>
- 
-
-<tr>
-  <td>
-    Birth Certificate Upload File:
-    <input type="file" name="fileUpload">
-  </td>
-</tr>
-
- 
- 
-</table>
-</form>
- 
 </body>
 </html>
