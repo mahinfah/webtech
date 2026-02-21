@@ -6,28 +6,81 @@
  
 <body>
    
-    <h1>Welcome to the WT Class</h1>
-    <p>Hello how are you </p>
+    <h1>                     Welcome to Admission Form         </h1>
+    <p>Please provide your information </p>
  
-<h1>Registration Form</h1>
+<h1>Admission Form</h1>
 <form>
+
+    
 <table>
  
 <tr>
-<td> 1st Name:</td>
+<td> Full Name:</td>
 <td> <input type="text"> </td>
 </tr>
  
 <tr>
-<td> Last Name:</td>
-<td><input type="text">  </td>
+<td> Number:</td>
+<td> <input type="number"> </td>
+</tr>
+
+<tr>
+<td> Email:</td>
+<td><input type="email">  </td>
 
 </tr>
  
-<trr>
-<td>Email: </td>
-<td> <input type="email"> </td>
-</trr>
+
+
+<tr>
+<td> Gender: 
+    <input type="radio" name=male" value="male"> Male
+ 
+
+
+    <input type="radio" name="female" value="female"> Female
+</td>
+</tr>
+
+
+<tr>
+<td>
+    Department Interest:
+    
+ <input type="checkbox" name="department" value="cse"> CSE
+    
+ <input type="checkbox" name="department" value="eee"> EEE
+<input type="checkbox" name="department" value="Data Science"> Data Science
+    
+ <input type="checkbox" name="department" value="english"> English
+</td>
+</tr>
+
+<tr>
+
+<td>
+
+    Course Selection:
+     
+    <select name="Course">
+       <option value="">-- Select Course --</option>
+
+       <option value="cse101">CSE101 - Introduction to Programming</option>
+       <option value="cse201">CSE201 - English Writing</option>
+       <option value="cse301">CSE301 - CAD</option>
+        <option value="cse401">CSE401 - Operating Systems</option>
+     </select>
+</td>
+</tr>
+
+
+
+
+
+
+
+
  
 <tr>
 <td> Age: </td>
@@ -45,6 +98,14 @@ Dob:
 <td> <input type="submit"> </td>
 </tr>
  
+
+<tr>
+  <td>
+    Birth Certificate Upload File:
+    <input type="file" name="fileUpload">
+  </td>
+</tr>
+
  
  
 </table>
